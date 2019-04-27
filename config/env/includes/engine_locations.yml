@@ -30,5 +30,5 @@
 engines.tk-substancepainter.location:
   type: git
   path: https://github.com/diegogarciahuerta/tk-substancepainter
-  version: v1.0.0
+  version: v1.1.0
 

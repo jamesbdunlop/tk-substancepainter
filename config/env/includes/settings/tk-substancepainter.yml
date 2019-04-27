@@ -13,7 +13,6 @@
 # Contact: https://www.linkedin.com/in/diegogh/
 
 ################################################################################
-
 includes:
 - ../app_locations.yml
 - ../engine_locations.yml
@@ -26,7 +25,6 @@ includes:
 - ./tk-multi-workfiles2.yml
 
 ################################################################################
-
 # asset
 settings.tk-substancepainter.asset:
   apps:

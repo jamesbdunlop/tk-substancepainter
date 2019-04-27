@@ -19,8 +19,6 @@ import inspect
 import logging
 import traceback
 
-from functools import wraps
-
 import tank
 from tank.log import LogManager
 from tank.platform import Engine
@@ -102,14 +100,10 @@ def refresh_engine(scene_name, prev_context):
         try:
             # could not detect context from path, will use the project context
             # for menus if it exists
-            ctx = engine.sgtk.context_from_entity_dictionary(
-                engine.context.project)
-            message = ("Shotgun Substance Painter Engine could not detect "
-                       "the context\n from the project loaded. "
-                       "Shotgun menus will be reset \n"
-                       "to the project '%s' "
-                       "context."
-                       "\n" % engine.context.project.get('name'))
+            ctx = engine.sgtk.context_from_entity_dictionary(engine.context.project)
+            message = ("Shotgun Substance Painter Engine could not detect the context\n" \
+                       "from the project loaded. Shotgun menus will be reset \n"
+                       "to the project '%s' context. \n" % engine.context.project.get('name'))
             engine.show_warning(message)
 
         except tank.TankError, e:

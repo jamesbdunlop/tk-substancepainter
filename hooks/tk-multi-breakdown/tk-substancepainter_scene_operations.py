@@ -11,8 +11,6 @@
 import os
 
 import sgtk
-from sgtk.errors import TankError
-
 
 __author__ = "Diego Garcia Huerta"
 __contact__ = "https://www.linkedin.com/in/diegogh/"
